@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		F6DC7F102670771C00DE20ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DC7F0E2670771C00DE20ED /* Main.storyboard */; };
 		F6DC7F122670771D00DE20ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6DC7F112670771D00DE20ED /* Assets.xcassets */; };
 		F6DC7F152670771D00DE20ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DC7F132670771D00DE20ED /* LaunchScreen.storyboard */; };
+		F6DC7F1E2670798B00DE20ED /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = F6DC7F1D2670798B00DE20ED /* PanModal */; };
+		F6DC7F2026707CC700DE20ED /* MyTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC7F1F26707CC700DE20ED /* MyTableVC.swift */; };
+		F6DC7F222670822A00DE20ED /* MySimpleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC7F212670822A00DE20ED /* MySimpleVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		F6DC7F112670771D00DE20ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6DC7F142670771D00DE20ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6DC7F162670771D00DE20ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6DC7F1F26707CC700DE20ED /* MyTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableVC.swift; sourceTree = "<group>"; };
+		F6DC7F212670822A00DE20ED /* MySimpleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySimpleVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6DC7F1E2670798B00DE20ED /* PanModal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +66,8 @@
 				F6DC7F0A2670771C00DE20ED /* SceneDelegate.swift */,
 				F6DC7F0C2670771C00DE20ED /* ViewController.swift */,
 				F6DC7F0E2670771C00DE20ED /* Main.storyboard */,
+				F6DC7F212670822A00DE20ED /* MySimpleVC.swift */,
+				F6DC7F1F26707CC700DE20ED /* MyTableVC.swift */,
 				F6DC7F112670771D00DE20ED /* Assets.xcassets */,
 				F6DC7F132670771D00DE20ED /* LaunchScreen.storyboard */,
 				F6DC7F162670771D00DE20ED /* Info.plist */,
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = bottomSheet_tutorial;
+			packageProductDependencies = (
+				F6DC7F1D2670798B00DE20ED /* PanModal */,
+			);
 			productName = bottomSheet_tutorial;
 			productReference = F6DC7F052670771C00DE20ED /* bottomSheet_tutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +121,9 @@
 				Base,
 			);
 			mainGroup = F6DC7EFC2670771C00DE20ED;
+			packageReferences = (
+				F6DC7F1C2670798B00DE20ED /* XCRemoteSwiftPackageReference "PanModal" */,
+			);
 			productRefGroup = F6DC7F062670771C00DE20ED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6DC7F0D2670771C00DE20ED /* ViewController.swift in Sources */,
+				F6DC7F2026707CC700DE20ED /* MyTableVC.swift in Sources */,
+				F6DC7F222670822A00DE20ED /* MySimpleVC.swift in Sources */,
 				F6DC7F092670771C00DE20ED /* AppDelegate.swift in Sources */,
 				F6DC7F0B2670771C00DE20ED /* SceneDelegate.swift in Sources */,
 			);
@@ -339,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6DC7F1C2670798B00DE20ED /* XCRemoteSwiftPackageReference "PanModal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/slackhq/PanModal.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6DC7F1D2670798B00DE20ED /* PanModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6DC7F1C2670798B00DE20ED /* XCRemoteSwiftPackageReference "PanModal" */;
+			productName = PanModal;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6DC7EFD2670771C00DE20ED /* Project object */;
 }
